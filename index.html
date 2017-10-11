@@ -4,7 +4,7 @@
 <meta http-equiv="Content-type" content="html; charset= "UTF-8">
 </head>
 <body>
-<form style="font-family:verdana; padding: 30px; border-radius: 25px;border-style:groove; display:table; margin-right:auto; margin-left:auto" method="post" action="skyjjang1234@gmail.com" onSubmit="return validateForm();">
+<form style="font-family:verdana; padding: 30px; border-radius: 25px;border-style:groove; display:table; margin-right:auto; margin-left:auto" method="post" name="myemailform" action="form-to-email.php" ">
 <div style="width:400px;"></div>
 <div style="color:white; border-radius: 25px; padding:50px; text-align:center; background-color:#75c4ff; font-size: 30px;">Contribution form</div>
 <div style="padding-top: 25px;"><ins><span style="border-radius: 10px;padding:5px;background-color:green; margin-right:2%; background-color:#75c4ff;">Step 1. </span><b>Tell us about yourself</b></span></ins></div>
@@ -43,43 +43,14 @@ Comment line
 <div style="text-align: right; margin-top:20px; padding-bottom: 20px;"><input style="font-weight:bold; padding:20px;background-color:#75c4ff; name="skip_Submit" value="Request Quote" type="submit"/></div>
 <div>
 </form>
-
+<!--
 <script type="text/javascript">
 function validateForm() {
-if (isEmpty(document.getElementById('name').value.trim())) {
-alert('First name is required!');
-return false;
-}
-if (isEmpty(document.getElementById('phoneNumber').value.trim())) {
-alert('Last name is required!');
-return false;
-}
-if (!validateEmail(document.getElementById('email').value.trim())) {
-alert('Email must be a valid email address!');
-return false;
-}
-if (!validateEmail(document.getElementById('price').value.trim())) {
-alert('Purchase Price field is required!');
-return false;
-if (!validateEmail(document.getElementById('size').value.trim())) {
-alert('Size field is required!');
-return false;
-if (!validateEmail(document.getElementById('brand').value.trim())) {
-alert('Brand field is required!');
-return false;
-if (!validateEmail(document.getElementById('colour').value.trim())) {
-alert('Colour field is required!');
-return false;
-if (!validateEmail(document.getElementById('timesWorn').value.trim())) {
-alert('Times Worn field is required!');
-return false;}
-return true;
-}
 function isEmpty(str) { return (str.length === 0 || !str.trim()); }
 function validateEmail(email) {
 var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
 return isEmpty(email) || re.test(email);
 }
 </script>
-
+-->
 </html>
